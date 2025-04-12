@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome.css">
     <title>LaughLines Jokes</title>
 </head>
 <body>
     <div id="container">
-        <h1>LaughLines</h1>
-        <p id="jokeElement">Loading a great joke for you...</p>
-        <button id="refreshButton">Refresh</button>
+        <div class="header">
+            <h1>LaughLines</h1>
+            <div class="toggle-container">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <label for="darkModeToggle" class="toggle-label">
+                    <i class="fas fa-moon" id="darkModeIcon"></i>
+                </label>
+            </div>
+        </div>
+        <div class="joke-container">
+            <div id="status-indicator" class="hidden">
+                <i class="fas fa-circle-notch fa-spin"></i>
+                <span id="status-text">Loading...</span>
+            </div>
+            <p id="jokeElement">Loading a great joke for you...</p>
+            <div class="joke-actions">
+                <button id="copyButton" title="Copy joke"><i class="fas fa-copy"></i></button>
+                <button id="favoriteButton" title="Add to favorites"><i class="far fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button id="refreshButton">Next Joke</button>
+            <button id="showFavoritesButton">Show Favorites</button>
+        </div>
+        <div id="favoritesPanel" class="hidden">
+            <h2>Favorite Jokes</h2>
+            <div class="favorites-controls">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchFavorites" placeholder="Search favorites...">
+                </div>
+            </div>
+            <div id="favoritesList"></div>
+            <button id="closeFavoritesButton">Close</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

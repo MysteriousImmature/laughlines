@@ -1,0 +1,95 @@
+/**
+ * Custom Font Awesome Icons
+ * Self-contained icon CSS using external SVG files
+ * No external dependencies required
+ */
+
+.fas,
+.far {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  background-color: currentColor;
+}
+
+/* Moon Icon */
+.fa-moon {
+  mask-image: url("icons/svg/moon.svg");
+  -webkit-mask-image: url("icons/svg/moon.svg");
+}
+
+/* Sun Icon */
+.fa-sun {
+  mask-image: url("icons/svg/sun.svg");
+  -webkit-mask-image: url("icons/svg/sun.svg");
+}
+
+/* Copy Icon */
+.fa-copy {
+  mask-image: url("icons/svg/copy.svg");
+  -webkit-mask-image: url("icons/svg/copy.svg");
+}
+
+/* Check Icon */
+.fa-check {
+  mask-image: url("icons/svg/check.svg");
+  -webkit-mask-image: url("icons/svg/check.svg");
+}
+
+/* Heart Icon (solid) */
+.fa-heart {
+  mask-image: url("icons/svg/heart-solid.svg");
+  -webkit-mask-image: url("icons/svg/heart-solid.svg");
+}
+
+/* Outline Heart */
+.far.fa-heart {
+  mask-image: url("icons/svg/heart-outline.svg");
+  -webkit-mask-image: url("icons/svg/heart-outline.svg");
+}
+
+/* Trash Icon */
+.fa-trash-alt {
+  mask-image: url("icons/svg/trash.svg");
+  -webkit-mask-image: url("icons/svg/trash.svg");
+}
+
+/* Search Icon */
+.fa-search {
+  mask-image: url("icons/svg/search.svg");
+  -webkit-mask-image: url("icons/svg/search.svg");
+}
+
+/* Spinner Icon */
+.fa-circle-notch {
+  mask-image: url("icons/svg/circle-notch.svg");
+  -webkit-mask-image: url("icons/svg/circle-notch.svg");
+}
+
+/* Times/Close Icon */
+.fa-times {
+  mask-image: url("icons/svg/times.svg");
+  -webkit-mask-image: url("icons/svg/times.svg");
+}
+
+/* Animation for spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+  animation: spin 1s linear infinite;
+} 
